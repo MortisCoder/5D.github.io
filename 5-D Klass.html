@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>5-Д класс</title>
+	<link rel="stylesheet" href="5Д.css">
+</head>
+
+<body>
+	<header>
+		<h1>Привет, это 5-Д класс!</h1>
+	</header>
+
+	<section class="main-content">
+		<h2>Список учеников:</h2>
+		<ul>
+			<li>Абдрасаков Нуриман</li>
+			<li>Абдымуталиев Арсен</li>
+			<li>Айтназаров Нурсултан</li>
+			<li>Айтыгулова Аделина</li>
+			<li>Алмазов Эйнар</li>
+			<li>Анарбаев Алихан</li>
+			<li>Анарбаев Рамазан</li>
+			<li>Асанов Элмар</li>
+			<li>Аскарбекова Акылай</li>
+			<li>Аскат кызы Каныкей</li>
+			<li>Аскеров Ислам</li>
+			<li>Байдоолотов Түгөлбай</li>
+			<li>Бактыбеков Тагай</li>
+			<li>Бакытбекова Каухар</li>
+			<li>Бекмырзаева Чолпонай</li>
+			<li>Жанышев Ай-теңир</li>
+			<li>Жолдошбекова Санира</li>
+			<li>Жумакунов Жанат</li>
+			<li>Идрисова Салима</li>
+			<li>Ильичбекова Камила</li>
+			<li>Калмаматова Амина</li>
+			<li>Керимбекова Элина</li>
+			<li>Мансуров Санжар</li>
+			<li>Маратов Улукмырза</li>
+			<li>Миргазиева Халима</li>
+			<li>Муратов Элдар</li>
+			<li>Намазбеков Бейше</li>
+			<li>Нурбеков Эллан</li>
+			<li>Нурболотов Нурнасип</li>
+			<li>Сабырбекова Мырзайым</li>
+			<li>Табалдиева Сабина</li>
+			<li>Турдубеков Нуриман</li>
+			<li>Төлömүшөв Кайрат</li>
+			<li>Эсенбекова Каныкей</li>
+		</ul>
+	</section>
+
+	<!-- Статистика класса -->
+	<section class="class-statistics">
+		<h2>Статистика класса:</h2>
+		<p><strong>Общее количество учеников:</strong> 34</p>
+		<p><strong>Количество мальчиков:</strong> 20</p>
+		<p><strong>Количество девочек:</strong> 14</p>
+	</section>
+
+	<!-- Переключатель темы -->
+	<section class="theme-toggle">
+		<button id="toggle-theme">Переключить тему</button>
+	</section>
+
+	<script src="5Д.js"></script>
+	<script>
+		// Получаем кнопку для переключения темы
+		const toggleButton = document.getElementById('toggle-theme');
+
+		// Обработчик клика по кнопке
+		toggleButton.addEventListener('click', () => {
+			// Переключаем класс 'dark-mode' на body
+			document.body.classList.toggle('dark-mode');
+		});
+	</script>
+</body>
+
+</html>
